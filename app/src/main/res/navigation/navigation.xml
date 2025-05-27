@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/platsFragment">
+
+    <fragment
+        android:id="@+id/platsFragment"
+        android:name="com.liem.cafeteriav2.home.plats.PlatsFragment"
+        android:label="fragment_plats"
+        tools:layout="@layout/fragment_plats" >
+        <action
+            android:id="@+id/action_platsFragment_to_begudesFragment"
+            app:destination="@id/begudesFragment" />
+        <action
+            android:id="@+id/action_platsFragment_to_pagamentFragment2"
+            app:destination="@id/pagamentFragment2" />
+        <action
+            android:id="@+id/action_platsFragment_to_postresFragment2"
+            app:destination="@id/postresFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/begudesFragment"
+        android:name="com.liem.cafeteriav2.home.begudes.BegudesFragment"
+        android:label="BegudesFragment" >
+        <action
+            android:id="@+id/action_begudesFragment_to_platsFragment"
+            app:destination="@id/platsFragment" />
+        <action
+            android:id="@+id/action_begudesFragment_to_postresFragment2"
+            app:destination="@id/postresFragment2" />
+        <action
+            android:id="@+id/action_begudesFragment_to_pagamentFragment2"
+            app:destination="@id/pagamentFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/postresFragment2"
+        android:name="com.liem.cafeteriav2.home.postres.PostresFragment"
+        android:label="fragment_postres"
+        tools:layout="@layout/fragment_postres" >
+        <action
+            android:id="@+id/action_postresFragment2_to_begudesFragment"
+            app:destination="@id/begudesFragment" />
+        <action
+            android:id="@+id/action_postresFragment2_to_pagamentFragment2"
+            app:destination="@id/pagamentFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagamentFragment2"
+        android:name="com.liem.cafeteriav2.home.pagament.PagamentFragment"
+        android:label="fragment_pagament"
+        tools:layout="@layout/fragment_pagament" >
+        <action
+            android:id="@+id/action_pagamentFragment2_to_postresFragment2"
+            app:destination="@id/postresFragment2" />
+        <action
+            android:id="@+id/action_pagamentFragment2_to_platsFragment"
+            app:destination="@id/platsFragment" />
+        <action
+            android:id="@+id/action_pagamentFragment2_to_begudesFragment"
+            app:destination="@id/begudesFragment" />
+    </fragment>
+</navigation>

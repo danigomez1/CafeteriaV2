@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/platsFragment"
+        android:icon="@drawable/outline_dinner_dining_24"
+        android:title="Plats" />
+    <item
+        android:id="@+id/begudesFragment"
+        android:icon="@drawable/outline_coffee_24"
+        android:title="Begudes" />
+    <item
+        android:id="@+id/postresFragment2"
+        android:icon="@drawable/baseline_icecream_24"
+        android:title="Postres" />
+    <item
+        android:id="@+id/pagamentFragment2"
+        android:icon="@drawable/outline_euro_symbol_24"
+        android:title="Pagament" />
+</menu>
